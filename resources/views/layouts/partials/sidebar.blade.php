@@ -31,7 +31,7 @@
                     </li>               
                   
                     @canany(['survey.show','survey.complete_survey'])
-                    <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="archive"></i><span>Survey</span></a>
+                    <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="archive"></i><span>Mutual Evaluation</span></a>
                         <ul class="sidebar-submenu">
                             @can('survey.show')
                             <li><a href="{{ route('survey.show') }}">Mutual Evaluation</a></li>
