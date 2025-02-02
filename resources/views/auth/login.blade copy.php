@@ -83,8 +83,8 @@
     <!-- Left Section -->
     <div class="login-left">
         <div class="text-center">
-            <img src="https://via.placeholder.com/150" alt="Logo">
-            <h3>bKash SIS</h3>
+            <img src="{{@$setting->logoDark}}" alt="Logo">
+            <!-- <h3>bKash SIS</h3> -->
         </div>
     </div>
 
