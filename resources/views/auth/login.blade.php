@@ -95,7 +95,7 @@
     <!-- Left Section -->
     <div class="login-left">
         <div class="text-center">
-            <img src="{{url($setting->logo ?? $setting->logo)}}" alt="Logo">
+            <img src="{{url($setting->logoDark ?? $setting->logoDark)}}" alt="Logo">
             {{-- <h3>bKash</h3> --}}
         </div>
     </div>
