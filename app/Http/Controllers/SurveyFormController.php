@@ -20,11 +20,11 @@ class SurveyFormController extends Controller
     {    
         if(auth()->user()->userType->typeName == 'Admin')    
         {
-            $answersGrouped = Answer::with('survey', 'user')->get()->groupBy('reference_no');
+            $answersGrouped = Answer::with('survey', 'user')->orderByDesc('created_at')->get()->groupBy('reference_no');
         }
         else
         {
-            $answersGrouped = Answer::with('survey', 'user')->where('fk_user_id',auth()->user()->userId)->get()->groupBy('reference_no');
+            $answersGrouped = Answer::with('survey', 'user')->where('fk_user_id',auth()->user()->userId)->orderByDesc('created_at')->get()->groupBy('reference_no');
         }           
         $userPermissions = auth()->user()->userType->permissions->pluck('name')->toArray();
         $flattenedAnswers = $answersGrouped->map(function ($group, $referenceNo) {
