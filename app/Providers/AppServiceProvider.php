@@ -9,7 +9,7 @@ use Illuminate\Support\ServiceProvider;
 class AppServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application service
+     * Register any  service
      *
      * @return void
      */
