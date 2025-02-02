@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title'){{ 'Survey Edit' }}@endsection
+@section('title'){{ 'Mutual Evaluation Edit' }}@endsection
 @section('header.css')
     <style>
 
@@ -11,7 +11,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-6">
-                        <h3>Survey Edit</h3>
+                        <h3>Mutual Evaluation Edit</h3>
                     </div>
                     <div class="col-6">
                         <ol class="breadcrumb">
@@ -21,7 +21,7 @@
                                 </a>
                             </li>
                             <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active">Survey</li>
+                            <li class="breadcrumb-item active">Mutual Evaluation</li>
                         </ol>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                 <div class="row ">
                                     <div class="col-md-8">
                                         <div class="mb-3">
-                                            <label for="surveyTitle">Survey Title</label><span class="text-danger">*</span>
+                                            <label for="surveyTitle">Mutual Evaluation Title</label><span class="text-danger">*</span>
                                             <input class="form-control" id="surveyTitle" name="title" type="text" placeholder="Survey Tile" value="{{ @$survey->title }}" required>
                                             <span class="text-danger"> <b>{{  $errors->first('title') }}</b></span>
                                         </div>    

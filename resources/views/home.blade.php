@@ -93,21 +93,19 @@
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
         google.charts.load('current', {'packages': ['bar']});
-    
-        google.charts.setOnLoadCallback(drawChart);
-    
+        google.charts.setOnLoadCallback(drawChart);    
         function drawChart() {          
             var data = google.visualization.arrayToDataTable(@json($chartDataForOrganization));
     
             var options = {
                 chart: {
                     title: 'Organization & Culture KPIs',
-                    subtitle: 'Total Completed vs. Total Target',
+                    
                 },
                 bars: 'vertical', 
                 vAxis: { format: 'decimal' },
                 height: 500,
-                colors: ['#1b9e77', '#d95f02'], 
+                colors: ['#B4C7E7', '#EDD3D7'], 
             };
     
             var chart = new google.charts.Bar(document.getElementById('barchart_material'));
@@ -127,12 +125,12 @@
             var options = {
                 chart: {
                     title: 'CDD KPIs',
-                    subtitle: 'Total Completed vs. Total Target',
+                   
                 },
                 bars: 'vertical', 
                 vAxis: { format: 'decimal' },
                 height: 500,
-                colors: ['#1b9e77', '#d95f02'], 
+                colors: ['#B4C7E7', '#EDD3D7'], 
             };
 
             var chart = new google.charts.Bar(document.getElementById('barchart_material1'));
@@ -152,12 +150,12 @@
             var options = {
                 chart: {
                     title: 'EDD KPIs',
-                    subtitle: 'Total Completed vs. Total Target',
+                    
                 },
                 bars: 'vertical', 
                 vAxis: { format: 'decimal' },
                 height: 500,
-                colors: ['#1b9e77', '#d95f02'], 
+                colors: ['#B4C7E7', '#EDD3D7'],
             };
 
             var chart = new google.charts.Bar(document.getElementById('barchart_material2'));
@@ -177,12 +175,12 @@
             var options = {
                 chart: {
                     title: 'CB KPIs',
-                    subtitle: 'Total Completed vs. Total Target',
+                    
                 },
                 bars: 'vertical', 
                 vAxis: { format: 'decimal' },
                 height: 500,
-                colors: ['#1b9e77', '#d95f02'], 
+                colors: ['#B4C7E7', '#EDD3D7'],
             };
 
             var chart = new google.charts.Bar(document.getElementById('barchart_material3'));

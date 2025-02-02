@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title'){{ 'Survey' }}@endsection
+@section('title'){{ 'Mutual Evaluation' }}@endsection
 @section('header.css')
     <style>
 
@@ -11,13 +11,13 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-6">
-                        <h3>Survey</h3>
+                        <h3>Mutual Evaluation</h3>
                     </div>
                     <div class="col-6">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="{{ route('index') }}"><i class="fa fa-home"></i></a></li>
                             <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active">Survey</li>
+                            <li class="breadcrumb-item active">Mutual Evaluation</li>
                         </ol>
                     </div>
                 </div>

@@ -34,10 +34,10 @@
                     <li class="sidebar-list"><a class="sidebar-link sidebar-title" href="#"><i data-feather="archive"></i><span>Survey</span></a>
                         <ul class="sidebar-submenu">
                             @can('survey.show')
-                            <li><a href="{{ route('survey.show') }}">Survey</a></li>
+                            <li><a href="{{ route('survey.show') }}">Mutual Evaluation</a></li>
                             @endcan
                             @can('survey.complete_survey')
-                            <li><a href="{{ route('survey.complete_survey') }}">Complete Survey List</a></li>
+                            <li><a href="{{ route('survey.complete_survey') }}">Complete Mutual Evaluation List</a></li>
                             @endcan                          
                         </ul>
                     </li>

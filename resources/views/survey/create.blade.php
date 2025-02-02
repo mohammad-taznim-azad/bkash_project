@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title'){{ 'Surveys Create' }}@endsection
+@section('title'){{ 'Mutual Evaluation Create' }}@endsection
 @section('header.css')
     <style>
 
@@ -11,7 +11,7 @@
             <div class="page-title">
                 <div class="row">
                     <div class="col-6">
-                        <h3>Survey Create</h3>
+                        <h3>Mutual Evaluation Create</h3>
                     </div>
                     <div class="col-6">
                         <ol class="breadcrumb">
@@ -21,7 +21,7 @@
                                 </a>
                             </li>
                             <li class="breadcrumb-item">Settings</li>
-                            <li class="breadcrumb-item active">Survey</li>
+                            <li class="breadcrumb-item active">Mutual Evaluation</li>
                         </ol>
                     </div>
                 </div>
